@@ -1,44 +1,35 @@
 .site-header {
-  padding-top: $space-1;
+  padding-top: 0;
   padding-bottom: $space-2;
+  border-top: solid 5px $blue;
+  border-bottom: solid 2px $lighter-gray;
 }
 
 .site-header a {
   color: #333;
-  font-size: $h3;
+  font-size: $h4;
   font-weight: 300;
   background-image: none;
 }
 
 .site-header .site-title {
-  font-size: $h2;
-}
-
-.site-nav {
-  margin-top: $space-2;
+  font-size: $h3!important;
+  color: $blue;
 }
 
 .site-header nav a {
-  color: #666;
+  color: #888;
+  font-size: $h6;
 }
 
 .site-header nav a:hover,
 .site-header nav a:focus,
 .site-header nav a:active {
-  color: #444;
-  opacity: 1;
-  border-bottom: 2px solid #444;
+  color: #333;
 }
 
 .site-nav a + a {
   margin-left: 1em;
-}
-
-.site-header a:hover,
-.posts .post a:hover .post-meta,
-.posts .post a:hover .post-title,
-.posts .post a:hover .post-summary {
-  opacity: 0.88;
 }
 
 .site-header {

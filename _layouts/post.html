@@ -7,24 +7,32 @@ layout: default
 {% assign minutes = 1 %}
 {% endif %}
 
-<div class="post-header mb2">
-  <h1>{{ page.title }}</h1>
-  <span class="post-meta">{{ page.date | date: site.date_format }}</span><br>
-  {% if page.update_date %}
-    <span class="post-meta">{{ site.text.post.updated }}: {{ page.update_date | date: site.date_format }}</span><br>
-  {% endif %}
-  <span class="post-meta small">
-  {% if page.minutes %}
-    {{ page.minutes }} {{ site.text.post.minute_read }}
-  {% else %}
-    {{ minutes }} {{ site.text.post.minute_read }}
-  {% endif %}
-  </span>
-</div>
+<div class="content">
+    <div class="post-header mb2">
+      <h1>{{ page.title }}</h1>
 
-<article class="post-content">
-  {{ content }}
-</article>
+
+      <span class="post-meta small">
+      {% if page.minutes %}
+        {{ page.minutes }} {{ site.text.post.minute_read }}
+      {% else %}
+        {{ minutes }} {{ site.text.post.minute_read }}
+      {% endif %}
+      </span>
+
+    </div>
+
+    <article class="post-content">
+      {{ content }}
+    </article>
+
+    <br>
+    
+    <span class="post-meta small">{{ page.date | date: site.date_format }}</span>
+    {% if page.update_date %}
+      <span class="post-meta small">{{ site.text.post.updated }}: {{ page.update_date | date: site.date_format }}</span>
+    {% endif %}
+</div>
 
 {% if site.show_sharing_icons %}
   {% include share_buttons.html %}

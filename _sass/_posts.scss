@@ -1,5 +1,5 @@
 
-.posts {
+.posts, .post figure {
   margin: 0;
 }
 
@@ -16,7 +16,13 @@
 .post-link .post-title {
   margin-top: 0;
   font-weight: 600;
-  color: #333;
+  color: $dark-gray;
+}
+
+.post-link .post-title:hover,
+.post-link .post-title:focus,
+.post-link .post-title:active {
+  color: $blue;
 }
 
 .posts .post .post-summary {
@@ -25,7 +31,6 @@
 
 .post-footer {
   @extend .italic;
-
   margin-top: .75rem;
   text-align: center;
 }

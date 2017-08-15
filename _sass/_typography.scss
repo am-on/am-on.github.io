@@ -8,7 +8,7 @@ abbr {
 }
 
 p {
-  color: #333;
+  color: $dark-gray;
   line-height: 1.5;
 }
 
@@ -21,4 +21,8 @@ sup {
   position: relative;
   vertical-align: middle;
   top: -0.9ex;
+}
+
+.site-header {
+  font-family: $heading-font-family;
 }

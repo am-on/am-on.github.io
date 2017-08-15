@@ -5,7 +5,7 @@ layout: default
 
 <div class="home">
   {% if posts_count > 0 %}
-    <div class="posts">
+    <div class="posts py2">
       {% for post in paginator.posts %}
         <div class="post py3">
           <a href="{{ post.url | prepend: site.baseurl }}" class="post-link"><h3 class="h1 post-title">{{ post.title }}</h3></a>
@@ -19,9 +19,12 @@ layout: default
           </span>
         </div>
       {% endfor %}
+
+      {% include pagination.html %}
+
     </div>
 
-    {% include pagination.html %}
+
   {% else %}
     <h1 class='center'>{{ site.text.index.coming_soon }}</h1>
   {% endif %}

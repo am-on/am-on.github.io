@@ -1,31 +1,35 @@
 .site-header {
-  padding-top: 0;
-  padding-bottom: $space-2;
-  border-top: solid 5px $blue;
+  border-top: solid 2px $blue;
   border-bottom: solid 2px $lighter-gray;
 }
 
 .site-header a {
-  color: #333;
-  font-size: $h4;
+  color: $dark-gray;
+  font-size: $h3;
   font-weight: 300;
   background-image: none;
 }
 
 .site-header .site-title {
-  font-size: $h3!important;
+  font-size: $h1!important;
   color: $blue;
 }
 
+.site-header .site-title:hover,
+.site-header .site-title:focus,
+.site-header .site-title:active, {
+  color: $dark-gray;
+}
+
 .site-header nav a {
-  color: #888;
-  font-size: $h6;
+  color: $dark-gray;
+  font-size: $h4;
 }
 
 .site-header nav a:hover,
 .site-header nav a:focus,
 .site-header nav a:active {
-  color: #333;
+  color: $blue;
 }
 
 .site-nav a + a {
